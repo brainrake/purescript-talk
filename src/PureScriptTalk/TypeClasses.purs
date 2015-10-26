@@ -7,7 +7,9 @@ import Debug.Trace
 class Noise a where
   noise :: a -> String
 
-data Cat = Cat
+data Cat = Cat | Kitten
+
+
 
 instance noiseCat :: Noise Cat where
   noise cat = "Meow!"

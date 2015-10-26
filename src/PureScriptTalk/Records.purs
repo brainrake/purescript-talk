@@ -10,8 +10,8 @@ type Person = {
 chuck = {
   first_name: "Chuck",
   last_name: "Foo",
-  age: 20 }
-
+  age: 20
+}
 larry = {
   first_name: "Larry",
   last_name: "Bar",
@@ -19,6 +19,9 @@ larry = {
 }
 
 full_name p = p.first_name ++ " " ++ p.last_name
+
+updatelocation p = p {location: "Nowhere"}
+
 
 
 r_main = do
